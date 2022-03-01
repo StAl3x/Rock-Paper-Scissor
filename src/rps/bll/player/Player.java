@@ -7,6 +7,7 @@ import rps.bll.game.Result;
 
 //Java imports
 import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * Example implementation of a player.
@@ -50,6 +51,13 @@ public class Player implements IPlayer {
         ArrayList<Result> results = (ArrayList<Result>) state.getHistoricResults();
 
         //Implement better AI here...
-        return Move.Rock;
+        Random rnd = new Random();
+        int rndn = rnd.nextInt(0,900);
+        if(rndn < 300 )
+            return Move.Rock;
+        else if (rndn > 300 || rndn < 600 )
+            return Move.Paper;
+        else
+            return Move.Scissor;
     }
 }

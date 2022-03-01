@@ -10,8 +10,6 @@ import java.util.ResourceBundle;
  */
 public class GameViewController  {
 
-    /**
-     * Initializes the controller class.
-     */
+
 
 }
