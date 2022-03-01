@@ -1,10 +1,9 @@
 package rps.bll.game;
 
 //Java imports
-import java.util.ArrayList;
 
+import java.util.ArrayList;
 //Project imports
-import rps.bll.player.IPlayer;
 
 /**
  * Manages game state and logic etc.
